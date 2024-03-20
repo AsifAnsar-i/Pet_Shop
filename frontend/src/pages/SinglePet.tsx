@@ -18,7 +18,7 @@ const SinglePet = () => {
   const navigate = useNavigate();
   const location = useLocation();  
   const {isLoggedIn} = useAppContext();
-  const sliderRef = useRef(null);
+const sliderRef = useRef<any>(null);
 
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
